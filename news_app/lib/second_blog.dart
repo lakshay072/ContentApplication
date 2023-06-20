@@ -31,7 +31,8 @@ class _ChewiePlayerWidgetState extends State<ChewiePlayerWidget> {
   }
 
   void _initializePlayer() {
-    final videoPlayerController = VideoPlayerController.network(widget.videoUrl);
+    final videoPlayerController = VideoPlayerController.network(
+        widget.videoUrl);
     videoPlayerController.initialize().then((_) {
       setState(() {
         _chewieController = ChewieController(
@@ -45,9 +46,13 @@ class _ChewiePlayerWidgetState extends State<ChewiePlayerWidget> {
 
   @override
   Widget build(BuildContext context) {
-    if (_chewieController! != null && _chewieController!.videoPlayerController.value.isInitialized) {
-      return Chewie(
-        controller: _chewieController!,
+    if (_chewieController != null &&
+        _chewieController!.videoPlayerController.value.isInitialized) {
+      return AspectRatio(
+        aspectRatio: _chewieController!.videoPlayerController.value.aspectRatio,
+        child: Chewie(
+          controller: _chewieController!,
+        ),
       );
     } else {
       return Center(
@@ -148,7 +153,7 @@ class _second_blogState extends State<second_blog> {
         children: [
           SingleChildScrollView(
             child: Container(
-              height: MediaQuery.of(context).size.height * 1.7,
+              height: MediaQuery.of(context).size.height * 1.8,
               child: Stack(
                 clipBehavior: Clip.none,
                 children: [

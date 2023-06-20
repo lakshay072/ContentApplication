@@ -4,8 +4,6 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:video_player/video_player.dart';
 
-import 'main.dart';
-
 class ChewiePlayerWidget extends StatefulWidget {
   final String videoUrl;
 
@@ -45,9 +43,13 @@ class _ChewiePlayerWidgetState extends State<ChewiePlayerWidget> {
 
   @override
   Widget build(BuildContext context) {
-    if (_chewieController! != null && _chewieController!.videoPlayerController.value.isInitialized) {
-      return Chewie(
-        controller: _chewieController!,
+    if (_chewieController != null &&
+        _chewieController!.videoPlayerController.value.isInitialized) {
+      return AspectRatio(
+        aspectRatio: _chewieController!.videoPlayerController.value.aspectRatio,
+        child: Chewie(
+          controller: _chewieController!,
+        ),
       );
     } else {
       return Center(
@@ -161,7 +163,7 @@ class _first_blogState extends State<first_blog> {
 
                 SingleChildScrollView(
                   child: Container(
-                    height: MediaQuery.of(context).size.height * 1.5,
+                    height: MediaQuery.of(context).size.height * 0.6,
                     child: Stack(
                       clipBehavior: Clip.none,
                       children: [
@@ -270,7 +272,6 @@ class _first_blogState extends State<first_blog> {
                                   ),
                                   SizedBox(height: MediaQuery.of(context).size.height * 0.02),
                                   ChewiePlayerWidget(videoUrl: heading1_video),
-                                  SizedBox(height: MediaQuery.of(context).size.height * 0.2),
                                 ],
                               ),
                             ),

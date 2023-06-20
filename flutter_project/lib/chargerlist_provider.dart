@@ -3,7 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-
 class ChargerList with ChangeNotifier {
   chargers() async {
     final headers = {

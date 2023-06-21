@@ -48,6 +48,7 @@ class _MapScreenState extends State<MapScreen> {
         onMapCreated: (controller) => _googleMapController = controller,
       ),
       floatingActionButton: FloatingActionButton(
+        heroTag: 'btn1',
         backgroundColor: Colors.yellow,
         foregroundColor: Colors.black,
         onPressed: () => _googleMapController.animateCamera(

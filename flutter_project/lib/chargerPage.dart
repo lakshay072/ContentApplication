@@ -1,10 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter_project/ChargerList.dart';
-import 'package:flutter_project/ChargerPage.dart';
+import 'package:flutter_project/chargerList.dart';
+import 'package:flutter_project/chargerPage.dart';
 import 'package:http/http.dart' as http;
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter_project/globals.dart';
 
 class ChargerScreen extends StatefulWidget {
   var chargerID;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project/ChargerList.dart';
-import 'package:flutter_project/ChargerPage.dart';
+import 'package:flutter_project/chargerList.dart';
+import 'package:flutter_project/chargerPage.dart';
 
 class Filter extends StatefulWidget {
   const Filter({Key? key}) : super(key: key);

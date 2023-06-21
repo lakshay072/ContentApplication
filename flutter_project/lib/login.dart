@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project/Dashboard.dart';
-import 'package:flutter_project/ForgotPasswordAuthentication.dart';
+import 'package:flutter_project/dashboard.dart';
+import 'package:flutter_project/forgotPasswordAuthentication.dart';
 import 'package:flutter_project/register.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';

@@ -13,12 +13,16 @@ class _TestingState extends State<Testing> {
   //final _name = ChargerGlobals.name;
 
   @override
+*//*
+
 */
 /* void initState() {
     super.initState();
     ChargerGlobals.ChargerInfo(chargerID);
     print(ChargerGlobals.chargers);
   }*//*
+*/
+/*
 
   @override
   Widget build(BuildContext context) {
@@ -46,12 +50,14 @@ class _TestingState extends State<Testing> {
     );
   }
 }
-*/
+*//*
 
+
+*/
 /*import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'charger_provider.dart';
+import 'chargersProvider.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -82,11 +88,13 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
-}*/
+}*//*
+
 import 'package:flutter/material.dart';
+import 'package:flutter_project/provider/provider_chargers.dart';
 import 'package:provider/provider.dart';
 
-import 'charger_provider.dart';
+import 'chargersProvider.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -119,3 +127,4 @@ class HomePage extends StatelessWidget {
   }
 }
 
+*/

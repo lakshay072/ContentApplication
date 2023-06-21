@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project/app_bar.dart';
-import 'package:flutter_project/bottom_app_bar.dart';
+import 'package:flutter_project/appBar.dart';
+import 'package:flutter_project/bottomAppBar.dart';
 import 'package:http/http.dart' as http;
 
 class ConnectChargerScreen extends StatefulWidget {

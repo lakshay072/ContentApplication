@@ -2,17 +2,17 @@ import 'dart:convert';
 import 'package:custom_info_window/custom_info_window.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_project/ChargerList.dart';
+import 'package:flutter_project/chargerList.dart';
 import 'package:flutter_project/MyAccount.dart';
 import 'package:flutter_project/RimoneChargeCard.dart';
-import 'package:flutter_project/app_bar.dart';
-import 'package:flutter_project/bottom_app_bar.dart';
+import 'package:flutter_project/appBar.dart';
+import 'package:flutter_project/bottomAppBar.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_project/VehicleInfo.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'dart:typed_data';
 import 'dart:ui' as ui;
-import 'app_bar.dart';
+import 'appBar.dart';
 
 class DashboardScreen extends StatefulWidget {
   final userID;
@@ -454,6 +454,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             bottom: 16.0,
             right: 16.0,
             child: FloatingActionButton(
+              heroTag: 'btn2',
               backgroundColor: Colors.yellow,
               foregroundColor: Colors.black,
               onPressed: () => _googleMapController.animateCamera(
@@ -466,6 +467,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             bottom: 86.0,
             right: 16.0,
             child: FloatingActionButton(
+              heroTag: 'btn3',
               backgroundColor: Colors.yellow,
               foregroundColor: Colors.black,
               onPressed: () {},
@@ -476,6 +478,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             bottom: 156.0,
             right: 16.0,
             child: FloatingActionButton(
+              heroTag: 'btn4',
               backgroundColor: Colors.yellow,
               foregroundColor: Colors.black,
               onPressed: () {},
@@ -486,6 +489,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             bottom: 660.0,
             right: 350.0,
             child: FloatingActionButton(
+              heroTag: 'btn5',
               backgroundColor: Colors.yellow,
               foregroundColor: Colors.black,
               onPressed: () {},

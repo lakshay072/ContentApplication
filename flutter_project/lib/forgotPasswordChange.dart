@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 
-import 'package:flutter_project/ForgotPasswordLogin.dart';
+import 'package:flutter_project/forgotPasswordLogin.dart';
 
 class ForgotPasswordChange extends StatefulWidget {
   const ForgotPasswordChange({Key? key}) : super(key: key);

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project/AddDebitCard.dart';
+import 'package:flutter_project/addDebitCard.dart';
 
 class RimoneChargeCard extends StatefulWidget {
   const RimoneChargeCard({Key? key}) : super(key: key);

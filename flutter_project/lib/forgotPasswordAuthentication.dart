@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter_project/ForgotPasswordChange.dart';
+import 'package:flutter_project/forgotPasswordChange.dart';
 import 'package:http/http.dart' as http;
 
 class PasswordResetScreen extends StatefulWidget {

@@ -90,7 +90,7 @@ class _OtpPageState extends State<OtpPage> {
 
 
 import 'package:flutter/material.dart';
-import 'package:flutter_project/Dashboard.dart';
+import 'package:flutter_project/dashboard.dart';
 import 'package:flutter_project/OtpLogin.dart';
 import 'package:flutter_project/StartupScreen.dart';
 import 'package:flutter_project/homepage.dart';

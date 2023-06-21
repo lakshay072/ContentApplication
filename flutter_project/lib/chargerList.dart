@@ -31,8 +31,8 @@ class _ChargerListState extends State<ChargerList> {
               final charger = chargers[index];
               return GestureDetector(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => StartUp()));
-                  print('Clicked on charger with ID: ${charger.id}');
+                  //Navigator.push(context, MaterialPageRoute(builder: (context) => StartUp()));
+                  print('Clicked on charger with ID: ${charger.location}');
                 },
                 child: ListTile(
                   leading: CircleAvatar(

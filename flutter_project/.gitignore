@@ -30,7 +30,18 @@ migrate_working_dir/
 .packages
 .pub-cache/
 .pub/
-/build/
+
+
+#Saving /build/app/outputs/flutter-apk From being ignored
+build/*
+!build/app
+build/app/*
+!build/app/outputs
+build/app/outputs/*
+!build/app/outputs/flutter-apk
+build/app/outputs/flutter-apk/*
+!build/app/outputs/flutter-apk/app-release.apk
+
 
 # Symbolication related
 app.*.symbols

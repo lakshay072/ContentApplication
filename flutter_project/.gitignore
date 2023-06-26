@@ -39,7 +39,7 @@ build/app/*
 !build/app/outputs
 build/app/outputs/*
 !build/app/outputs/flutter-apk
-build/app/outputs/flutter-apk/*
+build/app/outputs/flutter-apk/
 !build/app/outputs/flutter-apk/app-release.apk
 
 

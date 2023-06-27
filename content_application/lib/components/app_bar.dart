@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:share/share.dart';
 
 class ContentAppBar extends StatefulWidget implements PreferredSizeWidget {
   const ContentAppBar({Key? key}) : super(key: key);
@@ -14,34 +15,36 @@ class ContentAppBarState extends State<ContentAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.purple.shade400,
+      backgroundColor: Colors.purple.shade300,
       leading: Container(
-        width: 20,
-        height: 20,
+        width: MediaQuery.of(context).size.height * 0.2,
+        height: 50,
         child: Image.asset(
           'assets/logo.png',
           //fit: BoxFit.fitHeight,
         ),
       ),
-      title: Row(
+      leadingWidth: 40,
+      title: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(),
-            child: SizedBox(
-              height: MediaQuery
-                  .of(context)
-                  .size
-                  .height * 0.08,
+          Text(
+            "Content Application",
+            style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+                fontFamily: 'Newyork',
             ),
-          ),
+          )
         ],
       ),
       actions: [
         IconButton(
-          icon: const Icon(Icons.access_time_filled),
+          icon: const Icon(Icons.mobile_screen_share),
           color: Colors.white,
-          onPressed: () { },
+          onPressed: () {
+            _shareApplication('Check this out!');
+          },
         ),
       ],
     );
@@ -60,6 +63,11 @@ class ContentAppBarState extends State<ContentAppBar> {
   List<Widget> buildResults(BuildContext context) {}
 
   @override
-  List<Widget> buildSUggestions(BuildContext context) {}
+  List<Widget> buildSuggestions(BuildContext context) {}
 
 }*/
+
+//Share Application
+void _shareApplication(String content) {
+  Share.share(content);
+}
